@@ -6,6 +6,7 @@
         <meta name="author" content="John Doe">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sandeep (coderode)</title>
+<!--        use  https://username.github.io to see the project-->
     </head>
     <body>
     <?php
