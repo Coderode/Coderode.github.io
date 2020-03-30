@@ -53,3 +53,18 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+$(function(){
+    $('#menuIcon').click(function(){
+        $('.sidenav').toggle();
+    });
+    $('#moveDownIcon').click(function(){
+        $('html,body').animate({
+            scrollTop: $('#about').offset().top
+        },'slow');
+    });
+    $('#pic').click(function(){
+        $('html,body').animate({
+            scrollTop: $('#about').offset().top
+        },'slow');
+    });
+});
