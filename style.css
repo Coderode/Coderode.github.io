@@ -107,7 +107,6 @@ canvas {
 #moveDownIcon{
     width:150px;
     height:150px;
-    background-image:url(images/down.gif);
     background-position: center;
     position:relative;
     margin-top:200px;
