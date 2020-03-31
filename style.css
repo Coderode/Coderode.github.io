@@ -164,6 +164,9 @@ canvas {
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     color:black;
+    margin-bottom: 30px;
+    padding:50px;
+    height:auto;
 }
 #acheivements{
     background-color:rgba(0,0,0,0.3);
