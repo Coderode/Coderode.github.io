@@ -88,7 +88,11 @@ canvas {
 }
 #pic{
     position:absolute;
+<<<<<<< HEAD:docs/style.css
     top:36%;
+=======
+    top:32%;
+>>>>>>> newbranch:style.css
     text-align: center;
     width:100%;
     z-index:1;
@@ -102,7 +106,7 @@ canvas {
     background-position: center;
     position:relative;
     margin-top:150px;
-    margin-bottom:200px;
+    margin-bottom:60px;
 }
 #moveDownIcon:hover{
     cursor:pointer;
