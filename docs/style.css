@@ -1,8 +1,8 @@
 /* ---- reset ---- */
 body {
   margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
   position:relative;
+/*  font-family: Arvo, serif;*/
 }
 canvas {
   display: block;
@@ -68,7 +68,7 @@ canvas {
 /*    left:1%;*/
     height:50px;
     width:50px;
-    background-image:url(images/menuicon.gif);
+    background-image:url(../images/menuicon.gif);
     background-repeat: no-repeat, repeat;
     background-position: center;
     border-radius:50%;
@@ -88,7 +88,7 @@ canvas {
 }
 #pic{
     position:absolute;
-    top:34%;
+    top:36%;
     text-align: center;
     width:100%;
     z-index:1;
@@ -188,7 +188,7 @@ canvas {
 #github{
     height:200px;
     width:100%;
-    background-image:url(images/github.png);
+    background-image:url(../images/github.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius:10px;
@@ -197,7 +197,7 @@ canvas {
 #hackerrank{
     height:100px;
     width:100%;
-    background-image: url(images/hackerrank.jpg);
+    background-image: url(../images/hackerrank.jpg);
     background-position: center;
     background-repeat: no-repeat;
     border-radius:10px;
@@ -206,7 +206,7 @@ canvas {
 #leetcode{
     height:100px;
     width:100%;
-    background-image: url(images/leetcode.png);
+    background-image: url(../images/leetcode.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius:10px;
