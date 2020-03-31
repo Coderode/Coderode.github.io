@@ -50,7 +50,7 @@ canvas {
 /*  padding: 6px 8px 6px 16px;*/
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: white;
   display: block;
   padding-top:10px;
 }
@@ -87,16 +87,10 @@ canvas {
     padding-top:80px;
 }
 #pic{
-    width:100px;
-    height:100px;
-    border:3px solid grey;
-    border-radius:50%;
     position:absolute;
     top:34%;
-    left:46%;
-    background-image: url(images/pic.jpg);
-    background-repeat: no-repeat, repeat;
-    background-position: center;
+    text-align: center;
+    width:100%;
     z-index:1;
 }
 #pic:hover{
@@ -105,12 +99,9 @@ canvas {
 
 
 #moveDownIcon{
-    width:150px;
-    height:150px;
     background-position: center;
     position:relative;
-    margin-top:200px;
-    margin-left:44%;
+    margin-top:150px;
     margin-bottom:200px;
 }
 #moveDownIcon:hover{
@@ -177,6 +168,7 @@ canvas {
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     color:black;
+    margin:4%;
 }
 #contact{
     background-color:rgba(0,0,0,0.1);
@@ -219,14 +211,11 @@ canvas {
     background-repeat: no-repeat;
     border-radius:10px;
     margin-bottom:15px;
-}{
-    height:100px;
-    width:100%;
-    background-image: url(images/hackerrank.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius:10px;
-    margin-bottom:15px;
+}
+#footer a{
+    color:white;
+    margin-right:20px;
+    font-size: 17px;
 }
 
 
