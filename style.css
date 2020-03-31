@@ -120,7 +120,7 @@ canvas {
 #about{
     background-color:rgba(0,0,0,0.3);
 }
-#education1{
+#content1{
     position:relative;
     background-color:white;
     color:black;
@@ -131,7 +131,7 @@ canvas {
     border-bottom: 5px solid grey;
     z-index:1;
 }
-#skills1{
+#content2{
     position:relative;
     background-color:white;
     color:black;
@@ -142,7 +142,7 @@ canvas {
     border-bottom: 5px solid grey;
     z-index:1;
 }
-#links1{
+#content3{
     position: relative;
     background-color:white;
     color:black;
@@ -190,6 +190,41 @@ canvas {
 #footer{
     background-color:rgba(0,0,0,0.7);
     background-position: center;
+}
+#github{
+    height:200px;
+    width:100%;
+    background-image:url(images/github.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    margin-bottom:50px;
+}
+#hackerrank{
+    height:100px;
+    width:100%;
+    background-image: url(images/hackerrank.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+#leetcode{
+    height:100px;
+    width:100%;
+    background-image: url(images/leetcode.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    margin-bottom:15px;
+}{
+    height:100px;
+    width:100%;
+    background-image: url(images/hackerrank.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:10px;
+    margin-bottom:15px;
 }
 
 
