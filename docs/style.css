@@ -112,36 +112,36 @@ canvas {
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:5px;
+    padding:8px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index:1;
-    font-size: 15px;
+    font-size: 12px;
 }
 #content2{
     position:relative;
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:5px;
+    padding:8px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index:1;
-    font-size: 15px;
+    font-size: 12px;
 }
 #content3{
     position: relative;
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:5px;
+    padding:8px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index: 1;
-    font-size: 15px;
+    font-size: 12px;
 }
 #projects{
     background-color:rgba(0,0,0,0.1);
