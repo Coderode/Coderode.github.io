@@ -2,7 +2,7 @@
 body {
   margin: 0;
   position:relative;
-  font-family: Arvo, serif;
+/*  font-family: Arvo, serif;*/
 }
 canvas {
   display: block;
