@@ -2,7 +2,6 @@
 body {
   margin: 0;
   position:relative;
-/*  font-family: Arvo, serif;*/
 }
 canvas {
   display: block;
@@ -30,7 +29,7 @@ canvas {
 .sidenav {
   position:fixed;
   display:none;
-  height: 35%; /* Full-height: remove this if you want "auto" height */
+  height: auto; /* Full-height: remove this if you want "auto" height */
   width: 47px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1000; /* Stay on top */
@@ -42,7 +41,7 @@ canvas {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   color:white;
-  padding: 5px 0 0 13px;
+  padding: 5px 0 10px 13px;
 }
 
 /* The navigation menu links */
@@ -86,7 +85,7 @@ canvas {
 }
 #pic{
     position:absolute;
-    top:32%;
+    top:33%;
     text-align: center;
     width:100%;
     z-index:1;
@@ -100,7 +99,7 @@ canvas {
     background-position: center;
     position:relative;
     margin-top:150px;
-    margin-bottom:60px;
+    margin-bottom:35px;
 }
 #moveDownIcon:hover{
     cursor:pointer;
