@@ -2,7 +2,7 @@
 body {
   margin: 0;
   position:relative;
-/*  font-family: Arvo, serif;*/
+  font-family: Arvo, serif;
 }
 canvas {
   display: block;
@@ -47,12 +47,11 @@ canvas {
 
 /* The navigation menu links */
 .sidenav a {
-/*  padding: 6px 8px 6px 16px;*/
   text-decoration: none;
   font-size: 20px;
   color: white;
   display: block;
-  padding-top:10px;
+  padding-top:5px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -65,7 +64,6 @@ canvas {
     position:fixed;
     z-index:2000;
     top:1%;
-/*    left:1%;*/
     height:50px;
     width:50px;
     background-image:url(../images/menuicon.gif);
@@ -88,11 +86,7 @@ canvas {
 }
 #pic{
     position:absolute;
-<<<<<<< HEAD:docs/style.css
-    top:36%;
-=======
     top:32%;
->>>>>>> newbranch:style.css
     text-align: center;
     width:100%;
     z-index:1;
@@ -119,36 +113,38 @@ canvas {
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:10px;
+    padding:5px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index:1;
+    font-size: 15px;
 }
 #content2{
     position:relative;
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:10px;
+    padding:5px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index:1;
+    font-size: 15px;
 }
 #content3{
     position: relative;
     background-color:white;
     color:black;
     border-radius:10px;
-    padding:10px;
+    padding:5px;
     margin:4%;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
     z-index: 1;
+    font-size: 15px;
 }
 #projects{
-/*    background-image:url();*/
     background-color:rgba(0,0,0,0.1);
     background-position: center;
 }
