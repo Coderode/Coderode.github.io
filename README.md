@@ -1,3 +1,4 @@
 # Coderode.github.io
-github page repo 
-it is my Online portfolio
+## My personal Portfolio
+### [Link to my portfolio](https://coderode.github.io/)
+
