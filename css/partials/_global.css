@@ -11,10 +11,10 @@
 
 /*Buttons*/
 .button{
-    padding: 0.8rem 2.2rem;
+    padding: 0.6rem 1.5rem;
     font: normal 500 16px/20px var(--font-roboto);
     position:realtive;
-    border:3px solid transparent;
+    border: 2px solid transparent;
     border-radius:7px;
 }
 
@@ -22,25 +22,35 @@
     background:var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
-    transition: background .8s ease;
+    transition: border .8s ease;
     box-shadow: var(--box-shadow);
 }
 .button.primary-button:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
+    transition: border .8s ease;
     border: 2px solid blueviolet;
     border-radius:7px;
 }
-
-/* .button.primary-button::after{
-    position: relative;
-    top: -2px; 
-    left:-2px;
-    bottom : -2px; 
-    right: -2px;
+.button.secondary-button{
+    background:white;
+    background-clip: padding-box;
+    color: black;
+    transition: border .8s ease;
+    border: 2px solid blueviolet;
+}
+.button.secondary-button:hover{
     background: var(--gradient-color);
-    content:'';
-    z-index:-1;
-    border-radius: 4px;
-} */
+    color:whitesmoke;
+    box-shadow: var(--box-shadow);
+    transition: border .8s ease;
+    border: 2px solid white;
+    border-radius:7px;
+}
+
+
+p.para{
+    color:var(--text-color);
+    font: normal 400 17px/25px var(--font-roboto);
+}

@@ -40,7 +40,7 @@
     background-clip: text;
 }
 
-/* cover area */
+/* -----------------cover area ---------------------*/
 
 /* .site-main .site-banner{
     background: url(../images/background.png) no-repeat 100% 100%;
@@ -77,3 +77,26 @@
     float:right;
 }
 
+
+/*----------------About area------------*/
+
+.site-main .about-area{
+    padding: 8rem  5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font : normal bold 35px/45px var(--font-roboto);
+    letter-spacing: 4px;
+}
+
+.site-main .about-area .about-image{
+    text-align : center;
+
+}
+.site-main .about-area .about-image > img{
+    width: 80%;
+    height: 75%;
+    margin-top : 20%;
+    
+}
