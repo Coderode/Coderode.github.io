@@ -15,7 +15,7 @@
 }
 
 .header_area .main-menu .navbar{
-    padding-bottom :2rem;
+    padding-bottom :0.5rem;
     padding-top:0.5rem;
     padding-right: 4rem;
 }
@@ -38,6 +38,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+.navbar-custom{
+    background: var(--gradient-color);
+}
+.navbar-text-color{
+    color: aliceblue;
 }
 
 /* -----------------cover area ---------------------*/
@@ -99,3 +105,5 @@
     height:40%;
     margin-top : 14%;
 }
+
+
