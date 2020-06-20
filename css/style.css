@@ -9,101 +9,89 @@
 @import url('./partials/_global.css');
 
 
-/*header-navigation*/
-.header_area .main-menu .navbar .navbar-brand{
-    padding-left:4rem;
+#home{
+    /* background-image:var(--gradient-color), url(../images/home.png); */
+    background: var(--gradient-color),url(../images/home.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 100%, center;
 }
 
-.header_area .main-menu .navbar{
-    padding-bottom :0.5rem;
-    padding-top:0.5rem;
-    padding-right: 4rem;
+/* nav bar */
+.navbar{
+    background: linear-gradient(rgba(115,31,125,0.8)60%,rgba(0,0,0,0));
+    /* background-color: var(--primary-color); */
+}
+.navbar .navbar-nav{
+    padding-right: 2rem;
+    padding-top:0rem;
+    font : normal 25px var(--font-roboto);
+}
+.navbar .navbar-brand{
+    font : normal 25px var(--font-roboto);
+    font-weight: 300;
+    color:whitesmoke;
+    padding-left: 3rem;
+}
+.navbar .navbar-nav .nav-item > a{
+    color:whitesmoke;
+    font-weight: 300;
+    padding-right:1rem;
+}
+.navbar .navbar-nav .nav-item > a:hover{
+    color:white;
+    font-weight:500;
+}
+.navbar .navbar-nav .nav-item .active{
+    color:white;
+    font-weight:500;
+    border-bottom : 1px solid white;
+}
+.active{
+    color:white;
+    font-weight:500;
 }
 
-.header_area .main-menu .nav-item .nav-link{
-    font: normal 500 20px/2px var(--font-roboto);
-    padding: 1.0rem;
-    color: var(--title-color);
-}
 
-.header_area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.navbar-custom{
-    background: var(--gradient-color);
-}
-.navbar-text-color{
-    color: aliceblue;
-}
-
-/* -----------------cover area ---------------------*/
-
-/* .site-main .site-banner{
-    background: url(../images/background.png) no-repeat 100% 100%;
-} */
-.site-main .site-banner .site-title {
-    padding-left: 2rem;
-}
-.site-main .site-banner .site-title h3{
+/* home page */
+#home .home-title{
     padding-top: 20%;
-    font-weight: 400;
+    font-weight: 100;
+    font : normal bold 60px/70px var(--font-roboto);
+    color:var(--primary-color);
 }
-
-/*to create line after HEY*/
-.site-main .site-banner .site-title h3::after{
-    content:"";
-    height:2px;
-    width:18vw;
-    background: black;
+#home .home-subtitle1{
+    font-weight: 200;
+    font : normal  50px/60px var(--font-roboto);
+    color:var(--primary-color);
+}
+#home .home-subtitle2{
+    font-weight: 150;
+    font : normal  30px/40px var(--font-ubuntu);
+    color:var(--primary-color);
+}
+#home .home-title::after{
+    content: " ";
+    height: 3px;
+    width: 20vw;
+    background: var(--primary-color);
     display: inline-block;
-    margin-left:5%;
-    transform: translateY(-10px);
+    margin-left: 4%;
+    transform: translateY(-2px);
 }
-
-.site-main .site-banner .site-title h1{
-    font-size: 2.5rem;
+#home .site-title h1{
+    font-size: 5rem;
 }
-
-.site-main .site-banner .site-title h4{
-    font-size: 1.0rem;
-}
-.site-main .site-banner .banner-image > img{
-    padding : 3rem 0;
-    width: 20rem;
-    float:right;
+#home .site-title h4{
+    font-size: 1.5rem;
 }
 
 
-/*----------------About area------------*/
+   
+    
+    
 
-.site-main .about-area{
-    padding: 8rem 0;
-}
 
-.site-main .about-area .about-title h2 > span{
-    display: block;
-    font : normal bold 35px/45px var(--font-roboto);
-    letter-spacing: 4px;
-}
 
-.site-main .about-area .about-image{
-    text-align : center;
-
-}
-.site-main .about-area .about-image > img{
-    width: 60%;
-    height:40%;
-    margin-top : 14%;
-}
 
 

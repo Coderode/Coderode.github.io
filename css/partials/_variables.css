@@ -8,12 +8,12 @@ html, body{
 :root{
     --font-roboto : 'Roboto', sans-serif;
     --font-ubuntu : 'Ubuntu', sans-serif;
-    --primary-color: #4458dc;
+    --primary-color: #731F7D;
     --secondary-color: #854fee;
     --title-color: #141313;
     --text-color: #777777;
     --border-color: #201f1f17;
-    --gradient-color: linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    --gradient-color: linear-gradient(rgba(115,31,125,0.1)10%,rgba(0,0,0,0));
     --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
     --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
 }
