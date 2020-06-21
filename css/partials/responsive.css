@@ -1,0 +1,66 @@
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    #home .navbar{
+        background: linear-gradient(rgba(115,31,125,1)100%,rgba(0,0,0,0));
+    }
+    #home .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #home .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #about .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #about .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #education .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #education .navbar .navbar-brand >img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #skills .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #skills .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #contact .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #contact .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #projects .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #projects .navbar .navbar-brand >img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #about .about-title{
+        margin-left:15%;
+
+    }
+    
+    
+}

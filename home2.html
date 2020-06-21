@@ -21,40 +21,42 @@
         <!--Page1 : home page-->
         <div data-role="page" id="home" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#about" data-transition="pop">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education" data-transition="pop">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+                <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                  <a class="navbar-brand" href="#home">
+                    <img src="./images/name.png" alt="Sandeep">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="pop">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="pop">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
             </div>
             <div role="main" class="my-5 py - 2">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-6">
-                      <h3 class="home-title">Hello</h3>
+                      <h3 class="home-title" data-transition="pop">Hello</h3>
                       <h1 class="text-uppercase home-subtitle1">I am Sandeep</h1>
                       <h4 class="text-uppercase home-subtitle2">Web Developer</h4>
-                      <div class="home-buttons my-3">
+                      <div class="home-buttons my-5">
                         <div class="d-flex flex-row">
                           <button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button>
                           <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
@@ -63,9 +65,9 @@
                     </div>
                     <div class="col-md-6"></div>
                   </div>
-                  <!-- <div id="quote" class="py-3">
-                    <p>“I do think it’s important to follow your dreams and do something which you are excited by. If you follow your heart and do what you like, you will always do much better. It doesn’t matter what your educational qualification is.” </p>
-                    <span>– Sundar Pichai</span>
+                  <!-- <div id="quote">
+                    “I do think it’s important to follow your dreams and do something which you are excited by. If you follow your heart and do what you like, you will always do much better. It doesn’t matter what your educational qualification is.”<br>
+                    <span class="float-right">– Sundar Pichai</span>
                   </div> -->
                 </div>
             </div> 
@@ -74,8 +76,10 @@
         <!--Page2 : about page-->
         <div data-role="page" id="about" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home">
+                      <img src="./images/name.png" alt="Sandeep">
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -100,17 +104,47 @@
                     </div>
                   </nav>
             </div>
-            <div role="main" class="my-5">
-                about page
-            </div>
-            
+            <div role="main" class="my-5 py-2">
+              <div class="container-fluid px-0">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="about-image">
+                      <img src="./images/about.png" alt="About" class="img-fluid">
+                      <div class="icons my-3">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-12 about-title">
+                    <h4 class="text-uppercase pt-5">
+                      <span>Let Me</span>
+                      <span>Introduce</span>
+                      <span>My Self</span>
+                    </h4>
+                    <div class="paragraph py-4 w-75">
+                      <p class="about-para">
+                        Currently I am a student persuing MCA at Jamia millia islamia university.  
+                      </p>
+                      <p class="about-para">
+                        I aspire to grow in IT industry. I love to learn new things which enhances my skills. I like to have challenges and try to solve them. Being Patient is my strength. I always try to have my new version every day by adding some extra skills and learn something new everyday. Perfection of my work is my target.
+                      </p>
+                    </div>
+                    <div class="row col-6">
+                      <button type="button" class="btn button primary-button text-uppercase">download cv</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
         </div>
 
         <!--Page3 : Education page-->
         <div data-role="page" id="education" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -144,8 +178,8 @@
         <!--Page4 : skills page-->
         <div data-role="page" id="skills" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -179,8 +213,8 @@
         <!--Page5 : projects page-->
         <div data-role="page" id="projects" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -214,8 +248,8 @@
         <!--Page6 : contact page-->
         <div data-role="page" id="contact" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home">Sandeep</a>
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
