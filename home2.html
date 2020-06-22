@@ -31,7 +31,7 @@
                   <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="#about" data-transition="pop">About</a>
+                        <a class="nav-link" href="#about" data-transition="slide">About</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#education" data-transition="pop">Education</a>
@@ -43,13 +43,13 @@
                           <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
+                          <a class="nav-link" href="#contact" data-transition="flip">Contact me</a>
                       </li>
                     </ul>
                   </div>
                 </nav>
             </div>
-            <div role="main" class="my-5 py - 2">
+            <div role="main" class="my-5 py - 2 ui-content">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-6">
@@ -57,9 +57,13 @@
                       <h1 class="text-uppercase home-subtitle1">I am Sandeep</h1>
                       <h4 class="text-uppercase home-subtitle2">Web Developer</h4>
                       <div class="home-buttons my-5">
-                        <div class="d-flex flex-row">
-                          <button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button>
-                          <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                        <div class="row">
+                          <div class="col-5">
+                            <a href="#about" data-transition="flip"><button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button></a>
+                          </div>
+                          <div class="col-5">
+                            <a href="./resume/Sandeep(resume).pdf" target="_blank"> <button type="button" class="btn button secondary-button text-uppercase">Get cv</button></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -89,13 +93,13 @@
                           <a class="nav-link active" href="#about" data-transition="pop">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#education" data-transition="pop">Education</a>
+                            <a class="nav-link" href="#education" data-transition="flip">Education</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                            <a class="nav-link" href="#projects" data-transition="slide">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
@@ -104,26 +108,27 @@
                     </div>
                   </nav>
             </div>
-            <div role="main" class="my-5 py-2">
+            <div role="main" class="my-5 ui-content">
               <div class="container-fluid px-0">
                 <div class="row">
                   <div class="col-lg-6 col-md-12">
                     <div class="about-image">
                       <img src="./images/about.png" alt="About" class="img-fluid">
-                      <div class="icons my-3">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                      </div>
                     </div>
-                    
+                    <div class="icons my-3">
+                      <a href="https://www.linkedin.com/in/sandeep-00003/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" ></a>
+                      <a href="https://github.com/Coderode" target="_blank"><img src="./images/github.png" alt="github" ></a>
+                      <a href="https://www.hackerrank.com/Sandeep0001" target="_blank"><img src="./images/hackerrank.png" alt="hackerrank" ></a>
+                      <a href="https://leetcode.com/codesandy/" target="_blank"><img src="./images/leetcode.png" alt="leetcode" ></a>
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-md-12 about-title">
-                    <h4 class="text-uppercase pt-5">
+                  <div class="col-lg-6 col-md-12 about-title pt-4">
+                    <h4 class="text-uppercase">
                       <span>Let Me</span>
                       <span>Introduce</span>
                       <span>My Self</span>
                     </h4>
-                    <div class="paragraph py-4 w-75">
+                    <div class="paragraph py-2 w-75">
                       <p class="about-para">
                         Currently I am a student persuing MCA at Jamia millia islamia university.  
                       </p>
@@ -132,7 +137,7 @@
                       </p>
                     </div>
                     <div class="row col-6">
-                      <button type="button" class="btn button primary-button text-uppercase">download cv</button>
+                      <a href="./resume/Sandeep(resume).pdf" target="_blank"><button type="button" class="btn button primary-button text-uppercase">download cv</button></a>
                     </div>
                   </div>
                 </div>
@@ -169,8 +174,60 @@
                     </div>
                   </nav>
             </div>
-            <div role="main" class="my-5">
-                education page
+            <div role="main" class="my-5 py-5 ui-content" >
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-5 case">
+                    <a href="#graduation" data-rel="popup" data-position-to="window" data-transition="turn" >Graduation (B.Sc.(Hons) Physics)</a>
+                  </div>
+                  <div class="col-md-5 case float-right">
+                    <a href="#masters" data-rel="popup" data-position-to="window" data-transition="turn" >Masters (MCA)</a>
+                  </div>
+                </div>
+              </div>
+              <div data-role="popup" id="graduation" data-theme = "a" 
+              data-dismissible = "false" data-dismissible="false" class="popup">
+                <div class="ui-content">
+                  <div class="head" data-theme="a">
+                    <h4>B.Sc.(Hons) Physics</h4>
+                    <h6>2015 - 2018</h6>
+                  </div>
+                  <hr>
+                  <div role="main" class="ui-content main" data-theme="a">
+                    <p>Delhi University - Swami Shraddhanand College</p>
+                    <p>Grade : 9.1/10</p>
+                    <p>First Position in the class</p>
+                    <div class="float-right">
+                      <a href = "#" class = "btn button primary-button" data-rel = "back">
+                        close
+                      </a>
+                    </div> 
+                  </div>
+                  <br>
+                </div>
+              </div>
+
+              <div data-role="popup" id="masters" data-theme = "a" 
+              data-dismissible = "false" data-dismissible="false" class="popup">
+                <div class="ui-content">
+                  <div class="head" data-theme="a">
+                    <h4>Master of Computer Application</h4>
+                    <h6>2018 - 2021</h6>
+                  </div>
+                  <hr>
+                  <div role="main" class="ui-content main" data-theme="a">
+                    <p>Jamia Millia Islamia University</p>
+                    <p>Grade : 9.27/10 (Avg)</p>
+                    <p>Persuing...</p>
+                    <div class="float-right">
+                      <a href = "#" class = "btn button primary-button" data-rel = "back">
+                        close
+                      </a>
+                    </div> 
+                  </div>
+                  <br>
+                </div>
+              </div>
             </div>
             
         </div>

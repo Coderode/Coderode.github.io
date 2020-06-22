@@ -132,13 +132,25 @@
 #about .about-image > img{
     height: 50%;
     width: 50%;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 2px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
 }
 #about .about-image{
     text-align:center;
     margin-top: 10%;
 }
+#about .icons{
+    text-align:center;
+}
+#about .icons a > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin: 0 3%;
+    box-shadow: var(--box-shadow);
+}
+
 #about .about-title{
     margin-top:2%;
 }
@@ -153,6 +165,17 @@
     color: grey;
 }
 
+
+/* ----------------education part----------------- */
+
+#education .case a{
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    color:whitesmoke;
+    text-align:center;
+    padding:5%;
+    margin:2%;
+    box-shadow: var(--box-shadow);
+}
 
    
     
