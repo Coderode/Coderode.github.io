@@ -139,9 +139,20 @@
 #about .about-image{
     text-align:center;
     margin-top: 10%;
+    transition:transform .5s ease;
+}
+#about .about-image:hover{
+    transform:scale(1.1);
 }
 #about .icons{
-    text-align:center;
+    text-align:center;  
+}
+
+#about .icons a img{
+    transition:transform .4s ease;
+}
+#about .icons a img:hover{
+    transform:scale(1.5);
 }
 #about .icons a > img{
     width: 40px;
@@ -168,14 +179,63 @@
 
 /* ----------------education part----------------- */
 
-#education .case a{
+#education .case{
     background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
     color:whitesmoke;
     text-align:center;
     padding:5%;
     margin:2%;
     box-shadow: var(--box-shadow);
+    margin-top:20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    text-decoration: none;
+    transition: transform .4s ease;
 }
+#education .case h4{
+    font: normal 25px/30px var(--font-ubuntu);
+}
+#education .case p{
+    font: normal 17px/25px var(--font-ubuntu);
+}
+#education .case:hover{
+    transform: scale(1.1);
+}
+#education a{
+    text-decoration: none;
+}
+#education .popupbox{
+    border:2px solid var(--primary-color);
+}
+#education .popupbox hr{
+    border:1px solid var(--primary-color);
+}
+#education .popupbox .main p{    
+    font: normal 18px/25px var(--font-ubuntu);
+    color:grey;
+}
+#education .popupbox .main p a{
+    text-decoration: none;
+    color:grey;
+    font-weight:50px;
+}
+#education .popupbox .head{    
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    color:whitesmoke;
+    text-align:center;
+    border-radius: 10px;
+    padding:20px;
+}
+#education .popupbox .head h4{
+    font: normal 25px/30px var(--font-ubuntu);
+}
+#education .popupbox .head h6{
+    font: normal 15px/25px var(--font-ubuntu);
+}
+
+
+/* -------------------------------skills area----------------------- */
 
    
     

@@ -156,19 +156,19 @@
                     <div class="collapse navbar-collapse" id="navbar">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#about" data-transition="pop">About</a>
+                          <a class="nav-link" href="#about" data-transition="flip">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#education" data-transition="pop">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                            <a class="nav-link" href="#skills" data-transition="slide">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
+                            <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
                         </li>
                       </ul>
                     </div>
@@ -176,17 +176,27 @@
             </div>
             <div role="main" class="my-5 py-5 ui-content" >
               <div class="container">
-                <div class="row">
-                  <div class="col-md-5 case">
-                    <a href="#graduation" data-rel="popup" data-position-to="window" data-transition="turn" >Graduation (B.Sc.(Hons) Physics)</a>
+                <div class="row justify-content-between">
+                  <div class="col-md-6">
+                    <a href="#graduation" data-rel="popup" data-position-to="window" data-transition="turn" >
+                      <div class="case">
+                        <h4 class="text-uppercase">Graduation</h4>
+                        <p>B.Sc.(Hons) Physics</p>
+                      </div>
+                    </a>
                   </div>
-                  <div class="col-md-5 case float-right">
-                    <a href="#masters" data-rel="popup" data-position-to="window" data-transition="turn" >Masters (MCA)</a>
+                  <div class="col-md-6 float-right">
+                    <a href="#masters" data-rel="popup" data-position-to="window" data-transition="turn" >
+                      <div class="case">
+                        <h4 class="text-uppercase">Masters</h4>
+                        <p>Master of Computer Application</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
               <div data-role="popup" id="graduation" data-theme = "a" 
-              data-dismissible = "false" data-dismissible="false" class="popup">
+              data-dismissible = "false" data-dismissible="false" class="popupbox" data-overlay-theme="b">
                 <div class="ui-content">
                   <div class="head" data-theme="a">
                     <h4>B.Sc.(Hons) Physics</h4>
@@ -197,6 +207,7 @@
                     <p>Delhi University - Swami Shraddhanand College</p>
                     <p>Grade : 9.1/10</p>
                     <p>First Position in the class</p>
+                    <p><a href="http://ss.du.ac.in/">Visit College</a></p>
                     <div class="float-right">
                       <a href = "#" class = "btn button primary-button" data-rel = "back">
                         close
@@ -208,7 +219,7 @@
               </div>
 
               <div data-role="popup" id="masters" data-theme = "a" 
-              data-dismissible = "false" data-dismissible="false" class="popup">
+              data-dismissible = "false" data-dismissible="false" class="popupbox" data-overlay-theme="b">
                 <div class="ui-content">
                   <div class="head" data-theme="a">
                     <h4>Master of Computer Application</h4>
@@ -219,6 +230,7 @@
                     <p>Jamia Millia Islamia University</p>
                     <p>Grade : 9.27/10 (Avg)</p>
                     <p>Persuing...</p>
+                    <p><a href="https://www.jmi.ac.in/">Visit College</a></p>
                     <div class="float-right">
                       <a href = "#" class = "btn button primary-button" data-rel = "back">
                         close
@@ -235,34 +247,34 @@
         <!--Page4 : skills page-->
         <div data-role="page" id="skills" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#about" data-transition="pop">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education" data-transition="pop">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#skills" data-transition="pop">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+              <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                  <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="flip">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="flip">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#skills" data-transition="slide">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
             </div>
-            <div role="main" class="my-5">
-                skills page
+            <div role="main" class="my-5 py-3 ui-content">
+                
             </div>
             
         </div>
