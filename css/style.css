@@ -138,7 +138,7 @@
 }
 #about .about-image{
     text-align:center;
-    margin-top: 10%;
+    margin-top: 20%;
     transition:transform .5s ease;
 }
 #about .about-image:hover{
@@ -168,11 +168,11 @@
 
 #about .about-title h4 > span{
     display: block;
-    font: normal bold 25px/30px var(--font-roboto);
+    font: normal bold 22px/30px var(--font-roboto);
     letter-spacing: 10px;
 }
 #about .about-title .paragraph .about-para{
-    font: normal 18px/20px var(--font-ubuntu);
+    font: italic 15px/17px var(--font-ubuntu);
     color: grey;
 }
 
@@ -238,8 +238,44 @@
 /* -------------------------------skills area----------------------- */
 
    
-    
-    
+
+#skills .skillblock .showblock{
+    border-bottom:2px solid var(--primary-color);
+    color:whitesmoke;
+    text-align:center;
+    margin-top: 4%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform .6s ease-in-out;
+}
+#skills .skillblock .showblock:hover{
+    transform:scale(1.2);
+}
+#skills .skillblock .showblock .sidepanel{
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    color:whitesmoke;
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font: normal 17px/20px var(--font-ubuntu);
+    box-shadow: var(--box-shadow);
+}
+#skills .skillblock .showblock .contentpanel{
+    padding: 4% 0 3% 4%;
+}
+#skills .skillblock .showblock .contentpanel img{
+    width:40px;
+    height:40px;
+    float:left;
+    margin-left:20px;
+    margin-bottom:10px;
+    transition:transform .4s ease;
+}
+#skills .skillblock .showblock .contentpanel img :hover{
+    transform:scale(1.5);
+}
 
 
 
