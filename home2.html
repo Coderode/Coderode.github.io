@@ -298,9 +298,8 @@
                         <img src="images/icons/html2.png">
                         <img src="images/icons/js2.jpg">
                         <img src="images/icons/jquery.png">
-                        <img src="images/icons/jquery mobile.webp">
                         <img src="images/icons/django.png">
-                        <img src="images/icons/node.png">
+                        <img src="images/icons/nodejs2.png">
                         <img src="images/icons/php2.png">
                         <img src="images/icons/bootstrap.png">
                       </div>
@@ -323,59 +322,197 @@
         <!--Page5 : projects page-->
         <div data-role="page" id="projects" data-theme="a">
             <div data-role="header">
-                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#about" data-transition="pop">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education" data-transition="pop">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#projects" data-transition="pop">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
-                        </li>
-                      </ul>
+              <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                  <a class="navbar-brand" data-transition="flip" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="flip">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="flip">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div role="main" class="my-5 py-4 ui-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project2" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/e-commerce.PNG" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project3" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/blogger.PNG" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project1" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/onlinenotes.jpg" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project4" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/notepad.jpg" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project5" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/calculator.jpg" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-4">
+                    <a href="#project6" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/tictactoe.jpg" alt="Onlinenotes app">
+                    </a>
+                  </div>
+                </div>
+                <div class="float-right project-github-link my-3">
+                  For other projects Visit : 
+                  <a href="https://github.com/Coderode" target="_blank"><img src="./images/github.png" alt="github" ></a>
+                </div>
+              </div>
+              <div data-role="popup" id="project1" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/onlinenotes.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Online Notes App (web application)</h4>
+                        <h6>javascript,php,mysql,bootstrap,Ajax</h6>
+                        <p>It is a webapplications built using php & mysql.Keep notes online for any no of users.Maintaining login,signup,logout process.Creating notes,delete notes etc.</p>
+                        <a href="https://github.com/Coderode/Online-Notes-app.git" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project2" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/e-commerce.PNG" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>E-commerce Website</h4>
+                        <h6>Python Django, sqlite</h6>
+                        <p>It is an E-commerce website. built using django and sqlite for database having payment integration, login and logout, checkout system. etc.</p>
+                        <a href="https://github.com/Coderode/My-Teddy-shop" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project3" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/blogger.PNG" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Blogging Website</h4>
+                        <h6>Python Django, sqlite</h6>
+                        <p>It is a Blogging website. built using django and sqlite for database having blog post,comment,commnet reply options, login and logout to keep users, with TinyMCE integration. etc.</p>
+                        <a href="https://github.com/Coderode/Blogger" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project4" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/notepad.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Notepad (Desktop application)</h4>
+                        <h6>Java Swing GUI</h6>
+                        <p>It is a Notepad, I have built this Desktop application using Java Swing GUI. I built this by concerning all the functionalities available in simple notepad in windows. It have tried to build it very similar to that notepad.
+                        </p>
+                        <a href="https://github.com/Coderode/Notepad" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project5" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/calculator.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Scientific Calculator (Desktop application)</h4>
+                        <h6>Java Swing GUI</h6>
+                        <p>it is a simple scientific calculator built using java swing gui components. it calculates the expression you enter in the text field.
+                          I have used data structure and algorithm to solve an mathematical expression.
+                        </p>
+                        <a href="https://github.com/Coderode/Scientific-Calculator" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project6" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div class="container px-0">
+                  <div class="row justify-content-between">
+                    <div class="col-md-5 left-image">
+                      <img class="popphoto" src="./images/projects/tictactoe.jpg" alt="online notes app">
                     </div>
-                  </nav>
+                    <div class="col-md-7 right-content">
+                      <h4>Tic Tac Toe Game (Desktop application)</h4>
+                      <h6>Java Swing GUI</h6>
+                      <p>It is a simple Gui application for tic tac toe game . 
+                        built using java swing gui components . 
+                        the code is very easy to understand and the application
+                      </p>
+                      <a href="https://github.com/Coderode/Tic-Tac-Toe-Game" target="_blank">Github link!</a>
+                    </div>
+                  </div> 
+                </div>
             </div>
-            <div role="main" class="my-5">
-                project page
             </div>
-            
         </div>
 
         <!--Page6 : contact page-->
         <div data-role="page" id="contact" data-theme="a">
             <div data-role="header">
                 <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
-                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                    <a class="navbar-brand" href="#home" data-transition="flip"><img src="./images/name.png" alt="Sandeep"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#about" data-transition="pop">About</a>
+                          <a class="nav-link" href="#about" data-transition="flip">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#education" data-transition="pop">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                            <a class="nav-link" href="#skills" data-transition="flip">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                            <a class="nav-link" href="#projects" data-transition="slide">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#contact" data-transition="pop">Contact me</a>
@@ -384,8 +521,14 @@
                     </div>
                   </nav>
             </div>
-            <div role="main" class="my-5">
-                contact page
+            <div role="main" class="my-5 py-4">
+                <div class="container">
+                  <div class="row my-4 justify-content-center">
+                    <div class="col-md-8 contact-box py-5 my-5">
+
+                    </div>
+                  </div>
+                </div>
             </div>
             
         </div>
