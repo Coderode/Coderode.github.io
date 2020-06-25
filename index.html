@@ -1,317 +1,577 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="docs/bootstrap4.4.1.min.css">
-    <link rel="stylesheet" href="docs/style.css">
-    <script src="docs/jquery-1.12.4.js"></script>
-    <!-- fonts -->
-    <script defer src="fonts/js/all.js"></script>
-    <title>Portfolio(Sandeep)</title>
-</head>
-
-<body>
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-    <!-- Side navigation -->
-    <div class="sidenav">
-        <div style="height:100%; left:0%; padding-top:100%; color:white;">
-            <a href="#home"><i class="fas fa-home"></i></a>
-            <a href="#about"><i class="fas fa-user-tie"></i></a>
-            <a href="#projects"><i class="fas fa-tasks"></i></a>
-            <a href="#acheivements"><i class="fas fa-award"></i></a>
-            <a href="#contact"><i class="fas fa-at"></i></a>
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sandeep | Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+        <script src="./js/jquery-1.11.1.min.js"></script>
+        <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+        <!-- bootstrap  css file -->
+        <link rel="stylesheet" href="./css/bootstrap4.4.1.min.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <!-- custom css file -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body>
+        
+        <!--Page1 : home page-->
+        <div data-role="page" id="home" data-theme="a">
+            <div data-role="header">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                  <a class="navbar-brand" href="#home">
+                    <img src="./images/name.png" alt="Sandeep">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="slide">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="pop">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="flip">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div role="main" class="my-5 py - 2 ui-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="home-title" data-transition="pop">Hello</h3>
+                      <h1 class="text-uppercase home-subtitle1">I am Sandeep</h1>
+                      <h4 class="text-uppercase home-subtitle2">Web Developer</h4>
+                      <div class="home-buttons my-5">
+                        <div class="row">
+                          <div class="col-5">
+                            <a href="#about" data-transition="flip"><button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button></a>
+                          </div>
+                          <div class="col-5">
+                            <a href="./resume/Sandeep(resume).pdf" target="_blank"> <button type="button" class="btn button secondary-button text-uppercase">Get cv</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+                  <!-- <div id="quote">
+                    “I do think it’s important to follow your dreams and do something which you are excited by. If you follow your heart and do what you like, you will always do much better. It doesn’t matter what your educational qualification is.”<br>
+                    <span class="float-right">– Sundar Pichai</span>
+                  </div> -->
+                </div>
+            </div> 
         </div>
-    </div>
-    <div id="menuIcon"></div>
-    <div class="container-fluid" style="padding:0;">
-        <div id="home" style="color:white; text-align: center; height:100%; width:100%; position:relative;">
-            <div id="head">
-                <h1>Sandeep</h1>
-                <h5>Web developer, Java developer, Programmer.</h5>
+        
+        <!--Page2 : about page-->
+        <div data-role="page" id="about" data-theme="a">
+            <div data-role="header">
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home">
+                      <img src="./images/name.png" alt="Sandeep">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#about" data-transition="pop">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" data-transition="flip">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-transition="slide">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-transition="pop">Contact me</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
             </div>
-            <div id="pic">
-                <img src="images/pic.jpg" height="100" width="100" style="border-radius:50%; border:3px solid grey;">
-            </div>
-            <div id="moveDownIcon" style="text-align: center;">
-                <img src="images/down.gif" height="150" width="150">
-            </div>
-            <div id="resume" style="margin-bottom: 100px; text-align: left;">
-                <a href="resume/Sandeep(resume).pdf"
-                    style="padding:10px; font-size: 18px; border:1px solid white; color:white; border-radius: 40px;"
-                    target="_blank">Resume(pdf)</a>
-            </div>
-        </div>
-        <div id="about" style="color: white;height:100%; width:100%;">
-            <div style="padding-top:75px; margin-bottom:20px;">
-                <h2 style="text-align:center;">About Me</h2>
-            </div>
-            <hr>
-            <div class="container">
+            <div role="main" class="my-5 ui-content">
+              <div class="container-fluid px-0">
                 <div class="row">
-                    <div id="content1" class="col-md-3">
-                        <h5 style="text-align: center;">Education</h5>
-                        <hr>
-                        <ul>
-                            <li>
-                                <h6>B.Sc.(Hons) Physics</h6>
-                                Delhi University
-                                <p>Swami shraddhanand college</p>
-                                2015-2018
-                                <p>CGPA : 9.108</p>
-                            </li>
-                            <li>
-                                <h6>MCA (6-sem)</h6>
-                                Jamia Millia Islamia University
-                                <p>2018-present</p>
-                                CGPA : 9.25
-                            </li>
-                        </ul>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="about-image">
+                      <img src="./images/about.png" alt="About" class="img-fluid">
                     </div>
-                    <div id="content2" class="col-md-3">
-                        <h5 style="text-align: center;">Skills</h5>
-                        <hr>
-                        <ul>
-                            <li>
-                                <h6>Programming Languages:</h6>
-                                <p>C, C++, Java(core & advance), J2EE, JavaScript, PHP, Python, SQL</p>
-                            </li>
-                            <li>
-                                <h6>Web Techs</h6>
-                                <p>Html, CSS, Bootstrap, Nodejs, ES6,jQuery, PHP, Servlet, JSP, Wordpress</p>
-                            </li>
-                            <li>
-                                <h6>Others</h6>
-                                <p>Git & Github, Data Structures, Algorithms, DBMS</p>
-                            </li>
-                        </ul>
+                    <div class="icons my-3">
+                      <a href="https://www.linkedin.com/in/sandeep-00003/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" ></a>
+                      <a href="https://github.com/Coderode" target="_blank"><img src="./images/github.png" alt="github" ></a>
+                      <a href="https://www.hackerrank.com/Sandeep0001" target="_blank"><img src="./images/hackerrank.png" alt="hackerrank" ></a>
+                      <a href="https://leetcode.com/codesandy/" target="_blank"><img src="./images/leetcode.png" alt="leetcode" ></a>
                     </div>
-                    <div id="content3" class="col-md-3">
-                        <h5 style="text-align: center;">Others</h5>
-                        <hr>
-                        <ul>
-                            <li>
-                                <h6>Hobbies</h6>
-                                <p>Flute Playing, Badminton, Cricket, Drawing & painting etc.</p>
-                            </li>
-                            <li>
-                                <h6>Interests</h6>
-                                <p>Machine Learning, Programming, Web development</p>
-                            </li>
-                        </ul>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about-title pt-2">
+                    <h4 class="text-uppercase">
+                      <span>Let Me</span>
+                      <span>Introduce</span>
+                      <span>My Self</span>
+                    </h4>
+                    <div class="paragraph pt-2 w-75">
+                      <p class="about-para">
+                        Hi, I am Sandeep, Currently I am Persuing MCA at jamia millia islamia college in delhi and seeking an entry level job in the IT Company. My interest is in programming, coding and problem solving. 
+                      </p>
+                      <p class="about-para">
+                        I aspire to grow in IT industry. I love to learn new things which enhances my skills. I like to have challenges and try to solve them. Being Patient is my strength. Perfection of my work is my target.
+                      </p>
+                      <p class="about-para">
+                        I like to work in a team to learn new things from each other and enhance our skills and also come to know about ideas, creativity.
+                      </p>
+                      <p class="about-para">I support people when they need help from me.</p>
+                      <p class="about-para">My hobbies are flute playing, drawing and somehow painting also and I like play some outdoor games to be healthy like badminton and also I do some meditation for keep myself calm and attentive, progressive and proactive.</p>
                     </div>
+                    <div class="row col-6">
+                      <a href="./resume/Sandeep(resume).pdf" target="_blank"><button type="button" class="btn button primary-button text-uppercase">Get cv</button></a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>  
+        </div>
+
+        <!--Page3 : Education page-->
+        <div data-role="page" id="education" data-theme="a">
+            <div data-role="header">
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about" data-transition="flip">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#education" data-transition="pop">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-transition="slide">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+            <div role="main" class="my-5 py-5 ui-content" >
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-md-6">
+                    <a href="#graduation" data-rel="popup" data-position-to="window" data-transition="turn" >
+                      <div class="case">
+                        <h4 class="text-uppercase">Graduation</h4>
+                        <p>B.Sc.(Hons) Physics</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6 float-right">
+                    <a href="#masters" data-rel="popup" data-position-to="window" data-transition="turn" >
+                      <div class="case">
+                        <h4 class="text-uppercase">Masters</h4>
+                        <p>Master of Computer Application</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div data-role="popup" id="graduation" data-theme = "a" 
+              data-dismissible = "false" data-dismissible="false" class="popupbox" data-overlay-theme="b">
+                <div class="ui-content">
+                  <div class="head" data-theme="a">
+                    <h4>B.Sc.(Hons) Physics</h4>
+                    <h6>2015 - 2018</h6>
+                  </div>
+                  <hr>
+                  <div role="main" class="ui-content main" data-theme="a">
+                    <p>Delhi University - Swami Shraddhanand College</p>
+                    <p>Grade : 9.1/10</p>
+                    <p>First Position in the class</p>
+                    <p><a href="http://ss.du.ac.in/">Visit College</a></p>
+                    <div class="float-right">
+                      <a href = "#" class = "btn button primary-button" data-rel = "back">
+                        close
+                      </a>
+                    </div> 
+                  </div>
+                  <br>
+                </div>
+              </div>
+
+              <div data-role="popup" id="masters" data-theme = "a" 
+              data-dismissible = "false" data-dismissible="false" class="popupbox" data-overlay-theme="b">
+                <div class="ui-content">
+                  <div class="head" data-theme="a">
+                    <h4>Master of Computer Application</h4>
+                    <h6>2018 - 2021</h6>
+                  </div>
+                  <hr>
+                  <div role="main" class="ui-content main" data-theme="a">
+                    <p>Jamia Millia Islamia University</p>
+                    <p>Grade : 9.27/10 (Avg)</p>
+                    <p>Persuing...</p>
+                    <p><a href="https://www.jmi.ac.in/">Visit College</a></p>
+                    <div class="float-right">
+                      <a href = "#" class = "btn button primary-button" data-rel = "back">
+                        close
+                      </a>
+                    </div> 
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+
+        <!--Page4 : skills page-->
+        <div data-role="page" id="skills" data-theme="a">
+            <div data-role="header">
+              <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                  <a class="navbar-brand" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="flip">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="flip">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#skills" data-transition="slide">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div role="main" class="my-5 py-3 ui-content">
+              <div class="container mt-4">
+                <div class="skillblock row d-flex justify-content-center">
+                  <div class="col-md-8 col-sm-11">
+                    <div class="showblock row">
+                      <div class="sidepanel col-4">Programming</div>
+                      <div class="contentpanel col-8">
+                        <img src="images/icons/c.png">
+                        <img src="images/icons/cpp.png">
+                        <img src="images/icons/java.png">
+                        <img src="images/icons/python.png">
+                      </div>
+                    </div>
+                    <div class="showblock row">
+                      <div class="sidepanel col-4">Web Development</div>
+                      <div class="contentpanel col-8">
+                        <img src="images/icons/css.png">
+                        <img src="images/icons/html2.png">
+                        <img src="images/icons/js2.jpg">
+                        <img src="images/icons/jquery.png">
+                        <img src="images/icons/django.png">
+                        <img src="images/icons/nodejs2.png">
+                        <img src="images/icons/php2.png">
+                        <img src="images/icons/bootstrap.png">
+                      </div>
+                    </div>
+                    <div class="showblock row">
+                      <div class="sidepanel col-4">Others</div>
+                      <div class="contentpanel col-8">
+                        <img src="images/icons/sql.jpg">
+                        <img src="images/icons/mysql.png">
+                        <img src="images/icons/git.png">
+                        <img src="images/icons/github.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Page5 : projects page-->
+        <div data-role="page" id="projects" data-theme="a">
+            <div data-role="header">
+              <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                  <a class="navbar-brand" data-transition="flip" href="#home"><img src="./images/name.png" alt="Sandeep"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" data-transition="flip">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#education" data-transition="flip">Education</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#skills" data-transition="pop">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#projects" data-transition="pop">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" data-transition="slide">Contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div role="main" class="my-5 py-5 ui-content">
+              <div class="container">
                 <div class="row">
-                    <div id="content1" class="col-md-3" style="text-align: center;">
-                        <div class="LI-profile-badge" data-version="v1" data-size="small" data-locale="en_US"
-                            data-type="vertical" data-theme="light" data-vanity="sandeep-00003"><a
-                                class="LI-simple-link"
-                                href='https://in.linkedin.com/in/sandeep-00003?trk=profile-badge'>Sandeep</a></div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project2" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/e-commerce.PNG" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>E-commerce</i></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project3" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/blogger.PNG" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>Blogging</i></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project1" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/onlinenotes.jpg" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>Online Notes App</i></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project4" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/notepad.jpg" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>Notepad</i></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project5" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/calculator.jpg" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>Scientific Calculator</i></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 project-grid mt-1">
+                    <a href="#project6" data-rel="popup" data-position-to="window" data-transition="pop" >
+                      <img src="./images/projects/tictactoe.jpg" alt="Onlinenotes app">
+                    </a>
+                    <p style="color:grey; text-align:center"><i>Tic Tac Toe Game</i></p>
+                  </div>
+                </div>
+                <div class="float-right project-github-link my-3">
+                  For other projects Visit : 
+                  <a href="https://github.com/Coderode" target="_blank"><img src="./images/github.png" alt="github" ></a>
+                </div>
+              </div>
+              <div data-role="popup" id="project1" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/onlinenotes.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Online Notes App (web application)</h4>
+                        <h6>javascript,php,mysql,bootstrap,Ajax</h6>
+                        <p>It is a webapplications built using php & mysql.Keep notes online for any no of users.Maintaining login,signup,logout process.Creating notes,delete notes etc.</p>
+                        <a href="https://github.com/Coderode/Online-Notes-app.git" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project2" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/e-commerce.PNG" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>E-commerce Website</h4>
+                        <h6>Python Django, sqlite</h6>
+                        <p>It is an E-commerce website. built using django and sqlite for database having payment integration, login and logout, checkout system. etc.</p>
+                        <a href="https://github.com/Coderode/My-Teddy-shop" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project3" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/blogger.PNG" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Blogging Website</h4>
+                        <h6>Python Django, sqlite</h6>
+                        <p>It is a Blogging website. built using django and sqlite for database having blog post,comment,commnet reply options, login and logout to keep users, with TinyMCE integration. etc.</p>
+                        <a href="https://github.com/Coderode/Blogger" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project4" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/notepad.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Notepad (Desktop application)</h4>
+                        <h6>Java Swing GUI</h6>
+                        <p>It is a Notepad, I have built this Desktop application using Java Swing GUI. I built this by concerning all the functionalities available in simple notepad in windows. It have tried to build it very similar to that notepad.
+                        </p>
+                        <a href="https://github.com/Coderode/Notepad" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project5" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                  <div class="container px-0">
+                    <div class="row justify-content-between">
+                      <div class="col-md-5 left-image">
+                        <img class="popphoto" src="./images/projects/calculator.jpg" alt="online notes app">
+                      </div>
+                      <div class="col-md-7 right-content">
+                        <h4>Scientific Calculator (Desktop application)</h4>
+                        <h6>Java Swing GUI</h6>
+                        <p>it is a simple scientific calculator built using java swing gui components. it calculates the expression you enter in the text field.
+                          I have used data structure and algorithm to solve an mathematical expression.
+                        </p>
+                        <a href="https://github.com/Coderode/Scientific-Calculator" target="_blank">Github link!</a>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              <div data-role="popup" id="project6" data-dismissible = "false" class="projectDialog" data-overlay-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div class="container px-0">
+                  <div class="row justify-content-between">
+                    <div class="col-md-5 left-image">
+                      <img class="popphoto" src="./images/projects/tictactoe.jpg" alt="online notes app">
                     </div>
-                    <div id="content2" class="col-md-3" style="text-align: center; padding-top:20px;">
-                        <div id="github">
-                        </div>
-                        <h5><a href="https://github.com/Coderode" target="_blank">Coderode(Sandeep)</a></h5>
+                    <div class="col-md-7 right-content">
+                      <h4>Tic Tac Toe Game (Desktop application)</h4>
+                      <h6>Java Swing GUI</h6>
+                      <p>It is a simple Gui application for tic tac toe game . 
+                        built using java swing gui components . 
+                        the code is very easy to understand and the application
+                      </p>
+                      <a href="https://github.com/Coderode/Tic-Tac-Toe-Game" target="_blank">Github link!</a>
                     </div>
-                    <div id="content3" class="col-md-3" style="text-align: center; padding-top:20px;">
-                        <div id="hackerrank"></div>
-                        <h5><a href="https://www.hackerrank.com/Sandeep0001" target="_blank">hackerRank</a></h5>
-                        <div id="leetcode"></div>
-                        <h5><a href="https://leetcode.com/codesandy/" target="_blank">leetcode</a></h5>
-                    </div>
+                  </div> 
                 </div>
             </div>
-            <br><br><br>
+            </div>
         </div>
-        <div id="projects" style="color: white;height:100%; width:100%;">
-            <div style="padding-top:75px; margin-bottom:40px;">
-                <h2 style="text-align:center;">Projects</h2>
-            </div>
-            <hr>
-            <div class="container">
-                <div id="projectBody">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Online Notes App (web application)</h4>
-                            <h6>javascript,php,mysql,bootstrap,Ajax</h6>
-                            <p style="font-size:16px;">Description: It is a webapplications built using php & mysql.Keep
-                                notes online for any no of users.Maintaining login,signup,logout process.Creating
-                                notes,delete notes etc.</p>
-                            <h6 style="margin-top:15%;"><a href="https://github.com/Coderode/Online-Notes-app.git"
-                                    target="_blank">link to github repository.</a></h6>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="images/onlinenotes.jpg" height="110%" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div id="projectBody">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="images/fileexplorer.jpg" height="100%" width="100%">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Online-File-Explorer (web application)</h4>
-                            <h6>Nodejs application</h6>
-                            <p style="font-size:16px;">Description: It is a webapplications built using nodejs. It shows
-                                how to manage a file explorer using nodejs and handling different kind of file and
-                                running them online by fetching the data stored in a folder.</p>
-                            <h6 style="margin-top:15%;"><a href="https://new-file-explorer.herokuapp.com/"
-                                    target="_blank">link to heroku deployment.</a></h6>
-                            <h6 style="margin-top:5%;"><a href="https://github.com/Coderode/Online-File-Explorer.git"
-                                    target="_blank">link to github repository.</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <div id="projectBody">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Notepad (Desktop application)</h4>
-                            <h6>Swing GUI Java</h6>
-                            <p style="font-size:16px;">Description: It is a desktop application built using Swing GUI
-                                Java.I have tried to make it very much similar to the simple notepad available in
-                                desktops or windows.Just to understand the working of java applications.</p>
-                            <h6 style="margin-top:15%;"><a href="https://github.com/Coderode/Notepad.git"
-                                    target="_blank">link to github repository.</a></h6>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="images/notepad.jpg" height="250" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div id="projectBody">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="images/calculator.jpg" height="250" width="100%">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Scientific-Calculator (Desktop application)</h4>
-                            <h6>Swing GUI Java</h6>
-                            <p style="font-size:16px;">Description: Calculator build using Java swing GUI it is a simple
-                                scientific calculator built using java swing gui components. it calculates the
-                                expression you enter in the text field. I have used data structure and algorithm to
-                                solve an mathematical expression. the is easy to understand and it is written in java.
-                            </p>
-                            <h6 style="margin-top:15%;"><a href="https://github.com/Coderode/Scientific-Calculator.git"
-                                    target="_blank">link to github repository.</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <div id="projectBody">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Tic-Tac-Toe-Game (Desktop application)</h4>
-                            <h6>Swing GUI Java</h6>
-                            <p style="font-size:16px;">Description: tic tac toe game build using Java Swing GUI It is a
-                                simple Gui application for tic tac toe game . built using java swing gui components .
-                                the code is very to understand and the application is very easy to use . it is build for
-                                two players at a time.</p>
-                            <h6 style="margin-top:15%;"><a href="https://github.com/Coderode/Tic-Tac-Toe-Game.git"
-                                    target="_blank">link to github repository.</a></h6>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="images/tictactoe.jpg" height="250" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br><br>
 
+        <!--Page6 : contact page-->
+        <div data-role="page" id="contact" data-theme="a">
+            <div data-role="header">
+                <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+                    <a class="navbar-brand" href="#home" data-transition="flip"><img src="./images/name.png" alt="Sandeep"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about" data-transition="flip">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" data-transition="pop">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-transition="flip">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-transition="slide">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contact" data-transition="pop">Contact me</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+            <div role="main" class="my-5 py-4">
+                <div class="container">
+                  <div class="row my-4 justify-content-center">
+                    <div class="col-md-10 contact-box my-3">
+                      <div class="row">
+                        <div class="col-md-8 contact-left py-4 px-4">
+                          <form class="gform" action="https://script.google.com/macros/s/AKfycbzRnE5Fnz9cp34twLaYxDDciDNaslnDlB4Q2N7EUAstn6v6UTBk/exec" method="POST">
+                            <div style="display:none" class="thankyou_message py-2 mb-2">
+                              <p><em>Thanks</em> for contacting! I will get back to you soon!
+                              </p>
+                            </div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required autofocus placeholder="enter your name">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" required placeholder="abc@gamil.com">
+                            <label for="message">Drop your message:</label>
+                            <textarea cols="40" rows="10" name="message" id="message" required placeholder="message..."></textarea>
+                            <div class="row pt-4">
+                              <div class="col-3">
+                                <button type="submit"><img src="./images/icons/send.png" height="25px" width="30px"></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-4 contact-right px-3 py-5">
+                          <h5 class="mt-5">Sandeep</h5>
+                          <p><img src="images/icons/call.png" height="27px" width="27px"> +91 9971 292416</p>
+                          <p><img src="images/icons/mail.png" height="27px" width="27px"> sk9958814616@gmail.com</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
         </div>
-        <div id="acheivements" style="color: white;height:100%; width:100%;">
-            <div style="padding-top:75px; margin-bottom:40px;">
-                <h2 style="text-align:center;">Activity & Achievements</h2>
-            </div>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5" id="acheivementBody" style="padding:30px;">
-                        <h6>The Complete 2020 Web Development Course - Build 15 Projects</h6>
-                        <p>The only course you need to become a full-stack web developer. Covers HTML5, CSS3, JS, ES6,
-                            Node, APIs, Mobile & more!</p>
-                        <div style="text-align: center;"><img src="images/certificate.jpg" height="150px" width="100%">
-                        </div>
-                        <h6><a href="https://www.udemy.com/certificate/UC-9AKZAYR7/" target="_blank">Completion
-                                certificate link</a></h6>
-                    </div>
-                    <div class="col-md-5" id="acheivementBody" style="padding:40px;">
-                        <ul>
-                            <li>
-                                <h6>BSc</h6>
-                                <ul>
-                                    <li>
-                                        <p>1<sup>st</sup> Position in class.</p>
-                                    </li>
-                                    <li>
-                                        <p>Department fest Coordinator</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h6>MCA</h6>
-                                <ul>
-                                    <li>
-                                        <p>Class representative</p>
-                                    </li>
-                                    <li>
-                                        <p>Alumni meet-2019 Coordinator</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br><br><br>
-        </div>
-        <div id="contact" style="color: white;height:100%; width:100%;">
-            <div style="padding-top:75px; margin-bottom:40px;">
-                <h2 style="text-align:center;">Contact Details</h2>
-            </div>
-            <hr>
-            <div class="container">
-                <div id="contactBody" style=" padding:40px; font-weight:100" class="row">
-                    <div class="col-md-4 offset-4" style="padding-left:5%;">
-                        <h6>Email: sk9958814616@gmail.com</h6>
-                        <h6>Phone: 9971292416</h6>
-                        <h6>WhatsApp No.: 9971292416</h6>
-                        <h6>Address: Alipur delhi,India</h6>
-                    </div>
-                </div>
-            </div>
-            <br><br><br>
-        </div>
-    </div>
-    <div id="footer" class="footer" style="color: white; height:100%; width:100%; padding:20px;">
-        <p style="text-align: center; font-size: 15px;">&copy; <span id="year"></span></p><br>
-        <a href="#home"><i class="fas fa-home"></i></a>
-        <a href="#about"><i class="fas fa-user-tie"></i></a>
-        <a href="#projects"><i class="fas fa-tasks"></i></a>
-        <a href="#acheivements"><i class="fas fa-award"></i></a>
-        <a href="#contact"><i class="fas fa-at"></i></a>
-        <a href="https://www.hackerrank.com/Sandeep0001" target="_blank" class="float-right"><i
-                class="fab fa-hackerrank"></i></a>
-        <a href="https://github.com/Coderode" target="_blank" class="float-right"><i
-                class="fab fa-github-square"></i></a>
-        <a href="https://www.linkedin.com/in/sandeep-00003/" target="_blank" class="float-right"><i
-                class="fab fa-linkedin"></i></a>
-    </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="docs/particles.js"></script>
-    <script src="docs/boostrap4.4.1.min.js"></script>
-    <script src="docs/script.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
-</body>
-
+        
+        
+        <!-- jquery js file -->
+        <!-- <script src="./js/jquery-3.5.1.min.js"></script> -->
+        <!-- bootstrap js file -->
+        <script src="./js/bootstrap4.4.1.min.js"></script>
+        <!--custome js file-->
+        <script src="./js/index.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
+    </body>
 </html>

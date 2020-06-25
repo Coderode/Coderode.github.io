@@ -50,16 +50,20 @@
     padding-left: 3rem;
     height: 50px;
     width: 250px;
+    transition: transform .3s ease;
+}
+.navbar .navbar-brand > img:hover{
+    transform:scale(1.2);
 }
 .navbar .navbar-nav .nav-item > a{
     color:whitesmoke;
     font-weight: 300;
     padding-right:1rem;
-    transition: font-weight .15s ease;
+    transition: transform .3s ease;
 }
 .navbar .navbar-nav .nav-item > a:hover{
     color:white;
-    font-weight:400;
+    transform:scale(1.3);
 }
 .navbar .navbar-nav .nav-item .active{
     color:white;
@@ -91,7 +95,7 @@
     transition:transform .6s ease;
 }
 #home .home-title:hover{
-    transform: scaleX(1.3);
+    transform: scale(1.3);
 }
     
 #home .home-subtitle1{
@@ -101,7 +105,7 @@
     transition:transform .6s ease;
 }
 #home .home-subtitle1:hover{
-    transform: scale(1.3);
+    transform: scaleY(1.3);
 }
 
 #home .home-subtitle2{
@@ -111,7 +115,7 @@
     transition:transform .6s ease;
 }
 #home .home-subtitle2:hover{
-    transform: scale(1.3);
+    transform: scaleY(1.3);
 }
 #home .home-title::after{
     content: " ";
@@ -147,7 +151,7 @@
     height: 50%;
     width: 50%;
     border-radius: 20px;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     box-shadow: var(--box-shadow);
 }
 #about .about-image{
@@ -184,10 +188,18 @@
     display: block;
     font: normal bold 22px/30px var(--font-roboto);
     letter-spacing: 10px;
+    transition:transform .4s ease;
+}
+#about .about-title h4 > span:hover{
+    transform:scaleY(1.3);
 }
 #about .about-title .paragraph .about-para{
-    font: italic 15px/17px var(--font-ubuntu);
+    font: italic 18px/20px var(--font-ubuntu);
     color: grey;
+    transition:transform .4s ease-in;
+}
+#about .about-title .paragraph .about-para:hover{
+    transform:scaleY(1.3);
 }
 
 
@@ -301,7 +313,7 @@
     box-shadow: var(--box-shadow);
 }
 #projects .project-grid a img:hover{
-    transform:scale(1.2);
+    transform:scale(1.1);
     border:1px solid var(--primary-color);
 }
 
@@ -336,12 +348,12 @@
 #projects .projectDialog .right-content a{
     transition:font .4s ease;
     text-decoration: none;
-    color:grey;
-    font: normal 15px/25px var(--font-ubuntu);
+    color:blue;
+    font: normal 20px/25px var(--font-ubuntu);
 }
 #projects .projectDialog .right-content a:hover{
     text-decoration: none;
-    font: bold 20px/25px var(--font-ubuntu);
+    font: bold 25px/25px var(--font-ubuntu);
 } 
 
 #projects .project-github-link a img{
@@ -356,12 +368,44 @@
 /* -----------------contact area---------------------------- */
 
 #contact .contact-box{
-    border:2px solid var(--primary-color);
-    height: 300px;
+    border-bottom:2px solid var(--primary-color);
     width:100%;
     box-shadow: var(--box-shadow);
+    border-top-left-radius:10px;
+}
+#contact .contact-box .contact-left button{
+    background:transparent;
+    border:1px solid var(--primary-color);
+    transition: transform .4s ease-out;
+}
+#contact .contact-box .contact-left{
+    font:normal 20px/20px var(--font-ubuntu);
+    color:var(--primary-color);
+}
+#contact .contact-box .contact-left .thankyou_message{
+    padding:10px;
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    color:white;
+    font:normal 18px/22px var(--font-ubuntu);
     border-radius:10px;
 }
+#contact .contact-box .contact-left button:hover{
+    transform:scale(1.2);
+}
+#contact .contact-box .contact-right{
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    padding:0;
+    margin:0;
+    transition: transform .4s ease-in-out;
+    font:normal 18px/20px var(--font-roboto);
+    color:white;
+}
+#contact .contact-box .contact-right:hover{
+    transform:scale(1.1);
+}
+
 
 
 
