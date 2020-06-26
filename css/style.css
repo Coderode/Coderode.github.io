@@ -6,9 +6,7 @@ html, body{
     --font-roboto : 'Roboto', sans-serif;
     --font-ubuntu : 'Ubuntu', sans-serif;
     --primary-color: #731F7D;
-    --text-color: #777777;
     --gradient-color: linear-gradient(rgba(115,31,125,0.8)1%,rgba(0,0,0,0));
-    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
     --box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 /*Global classes*/
@@ -21,7 +19,7 @@ html, body{
 /*Buttons*/
 .button{
     padding: 0.6rem 2rem;
-    font: normal 500 16px/20px var(--font-roboto);
+    font: normal 500 16px/20px 'Roboto', sans-serif;
     position:relative;
     border: 2px solid transparent;
     border-radius:7px;
@@ -32,14 +30,14 @@ html, body{
     background-clip: padding-box;
     color: whitesmoke;
     transition: border .8s ease;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 .button.primary-button:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
     transition: border .8s ease;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #731F7D;
     border-radius:7px;
 }
 .button.secondary-button{
@@ -47,20 +45,20 @@ html, body{
     background-clip: padding-box;
     color: black;
     transition: border .8s ease;
-    border: 2px solid  var(--primary-color);
+    border: 2px solid  #731F7D;
 }
 .button.secondary-button:hover{
     background: linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
     color:whitesmoke;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
     transition: border .8s ease;
     border: 2px solid white;
     border-radius:7px;
 }
 
 #home{
-    background-image:var(--gradient-color), url(../images/home.png);
-    /* background: var(--gradient-color),url(../images/home.png); */
+    background-image:linear-gradient(rgba(115,31,125,0.8)1%,rgba(0,0,0,0)), url(../images/home.png);
+    /* background: linear-gradient(rgba(115,31,125,0.8)1%,rgba(0,0,0,0)),url(../images/home.png); */
     background-size:cover;
     background-repeat: no-repeat;
     background-position:100% 100%, center;
@@ -87,7 +85,7 @@ html, body{
 .navbar .navbar-nav{
     padding-right: 2rem;
     padding-top:0rem;
-    font : normal 25px var(--font-roboto);
+    font : normal 25px 'Roboto', sans-serif;
 }
 
 .navbar .navbar-brand > img{
@@ -125,7 +123,7 @@ html, body{
     color:white;
 }
 .navbar .navbar-toggler{
-    background-color:var(--primary-color);
+    background-color:#731F7D;
     border:solid 2px white;
     border-radius:10px;
 }
@@ -136,8 +134,8 @@ html, body{
 #home .home-title{
     padding-top: 20%;
     font-weight: 100;
-    font : normal bold 60px/70px var(--font-roboto);
-    color:var(--primary-color);
+    font : normal bold 60px/70px 'Roboto', sans-serif;
+    color:#731F7D;
     transition:transform .6s ease;
 }
 #home .home-title:hover{
@@ -146,8 +144,8 @@ html, body{
     
 #home .home-subtitle1{
     font-weight: 200;
-    font : normal  50px/60px var(--font-roboto);
-    color:var(--primary-color);
+    font : normal  50px/60px 'Roboto', sans-serif;
+    color:#731F7D;
     transition:transform .6s ease;
 }
 #home .home-subtitle1:hover{
@@ -156,8 +154,8 @@ html, body{
 
 #home .home-subtitle2{
     font-weight: 150;
-    font : normal  30px/40px var(--font-ubuntu);
-    color:var(--primary-color);
+    font : normal  30px/40px 'Ubuntu', sans-serif;
+    color:#731F7D;
     transition:transform .6s ease;
 }
 #home .home-subtitle2:hover{
@@ -167,7 +165,7 @@ html, body{
     content: " ";
     height: 3px;
     width: 20vw;
-    background: var(--primary-color);
+    background: #731F7D;
     display: inline-block;
     margin-left: 4%;
     transform: translateY(-2px);
@@ -182,8 +180,8 @@ html, body{
 #home #quote{
     position:inherit;
     margin-top: 65px;
-    color:var(--primary-color);
-    font: normal 18px/30px var(--font-ubuntu);
+    color:#731F7D;
+    font: normal 18px/30px 'Ubuntu', sans-serif;
     font-weight: 50;
     left:15%;
     right:15%;
@@ -197,8 +195,8 @@ html, body{
     height: 50%;
     width: 50%;
     border-radius: 20px;
-    border: 1px solid var(--primary-color);
-    box-shadow: var(--box-shadow);
+    border: 1px solid #731F7D;
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 #about .about-image{
     text-align:center;
@@ -223,7 +221,7 @@ html, body{
     height: 40px;
     border-radius: 20%;
     margin: 0 3%;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 
 #about .about-title{
@@ -232,7 +230,7 @@ html, body{
 
 #about .about-title h4 > span{
     display: block;
-    font: normal bold 22px/30px var(--font-roboto);
+    font: normal bold 22px/30px 'Roboto', sans-serif;
     letter-spacing: 10px;
     transition:transform .4s ease;
 }
@@ -240,7 +238,7 @@ html, body{
     transform:scaleY(1.3);
 }
 #about .about-title .paragraph .about-para{
-    font: italic 18px/20px var(--font-ubuntu);
+    font: italic 18px/20px 'Ubuntu', sans-serif;
     color: grey;
     transition:transform .4s ease-in;
 }
@@ -257,19 +255,19 @@ html, body{
     text-align:center;
     padding:5%;
     margin:2%;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
     margin-top:20%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid #731F7D;
     text-decoration: none;
     transition: transform .4s ease;
 }
 #education .case h4{
-    font: normal 25px/30px var(--font-ubuntu);
+    font: normal 25px/30px 'Ubuntu', sans-serif;
 }
 #education .case p{
-    font: normal 17px/25px var(--font-ubuntu);
+    font: normal 17px/25px 'Ubuntu', sans-serif;
 }
 #education .case:hover{
     transform: scale(1.1);
@@ -278,13 +276,13 @@ html, body{
     text-decoration: none;
 }
 #education .popupbox{
-    border:2px solid var(--primary-color);
+    border:2px solid #731F7D;
 }
 #education .popupbox hr{
-    border:1px solid var(--primary-color);
+    border:1px solid #731F7D;
 }
 #education .popupbox .main p{    
-    font: normal 18px/25px var(--font-ubuntu);
+    font: normal 18px/25px 'Ubuntu', sans-serif;
     color:grey;
 }
 #education .popupbox .main p a{
@@ -300,10 +298,10 @@ html, body{
     padding:20px;
 }
 #education .popupbox .head h4{
-    font: normal 25px/30px var(--font-ubuntu);
+    font: normal 25px/30px 'Ubuntu', sans-serif;
 }
 #education .popupbox .head h6{
-    font: normal 15px/25px var(--font-ubuntu);
+    font: normal 15px/25px 'Ubuntu', sans-serif;
 }
 
 
@@ -312,7 +310,7 @@ html, body{
    
 
 #skills .skillblock .showblock{
-    border-bottom:2px solid var(--primary-color);
+    border-bottom:2px solid #731F7D;
     color:whitesmoke;
     text-align:center;
     margin-top: 4%;
@@ -331,8 +329,8 @@ html, body{
     padding-bottom:50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    font: normal 17px/20px var(--font-ubuntu);
-    box-shadow: var(--box-shadow);
+    font: normal 17px/20px 'Ubuntu', sans-serif;
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 #skills .skillblock .showblock .contentpanel{
     padding: 4% 0 3% 4%;
@@ -354,17 +352,17 @@ html, body{
 #projects .project-grid  a img{
     width: 100%;
     height: 200px;
-    border:2px solid var(--primary-color);
+    border:2px solid #731F7D;
     transition: transform .4s ease-in;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
 }
 #projects .project-grid a img:hover{
     transform:scale(1.1);
-    border:1px solid var(--primary-color);
+    border:1px solid #731F7D;
 }
 
 #projects .projectDialog{
-    border:2px solid var(--primary-color);
+    border:2px solid #731F7D;
 }
 
 #projects .projectDialog .left-image img{
@@ -378,28 +376,28 @@ html, body{
 }
 #projects .projectDialog .right-content{
     padding:20px 80px 20px 30px;
-    color:var(--primary-color);
+    color:#731F7D;
 }
 #projects .projectDialog .right-content h4{
-    font: normal 30px/30px var(--font-ubuntu);
+    font: normal 30px/30px 'Ubuntu', sans-serif;
 }
 #projects .projectDialog .right-content h6{
-    font: italic 15px/20px var(--font-ubuntu);
+    font: italic 15px/20px 'Ubuntu', sans-serif;
     color:grey;
 }
 #projects .projectDialog .right-content p{
-    font: normal 18px/30px var(--font-ubuntu);
+    font: normal 18px/30px 'Ubuntu', sans-serif;
     color:grey;
 }
 #projects .projectDialog .right-content a{
     transition:font .4s ease;
     text-decoration: none;
     color:blue;
-    font: normal 20px/25px var(--font-ubuntu);
+    font: normal 20px/25px 'Ubuntu', sans-serif;
 }
 #projects .projectDialog .right-content a:hover{
     text-decoration: none;
-    font: bold 25px/25px var(--font-ubuntu);
+    font: bold 25px/25px 'Ubuntu', sans-serif;
 } 
 
 #projects .project-github-link a img{
@@ -414,25 +412,25 @@ html, body{
 /* -----------------contact area---------------------------- */
 
 #contact .contact-box{
-    border-bottom:2px solid var(--primary-color);
+    border-bottom:2px solid #731F7D;
     width:100%;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
     border-top-left-radius:10px;
 }
 #contact .contact-box .contact-left button{
     background:transparent;
-    border:1px solid var(--primary-color);
+    border:1px solid #731F7D;
     transition: transform .4s ease-out;
 }
 #contact .contact-box .contact-left{
-    font:normal 20px/20px var(--font-ubuntu);
-    color:var(--primary-color);
+    font:normal 20px/20px 'Ubuntu', sans-serif;
+    color:#731F7D;
 }
 #contact .contact-box .contact-left .thankyou_message{
     padding:10px;
     background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
     color:white;
-    font:normal 18px/22px var(--font-ubuntu);
+    font:normal 18px/22px 'Ubuntu', sans-serif;
     border-radius:10px;
 }
 #contact .contact-box .contact-left button:hover{
@@ -445,7 +443,7 @@ html, body{
     padding:0;
     margin:0;
     transition: transform .4s ease-in-out;
-    font:normal 18px/20px var(--font-roboto);
+    font:normal 18px/20px 'Roboto', sans-serif;
     color:white;
 }
 #contact .contact-box .contact-right:hover{
