@@ -1,8 +1,71 @@
+html, body{
+    margin:0%;
+    box-sizing: border-box;
+    width: 100%;
+    height:100%;
+}
+
+:root{
+    --font-roboto : 'Roboto', sans-serif;
+    --font-ubuntu : 'Ubuntu', sans-serif;
+    --primary-color: #731F7D;
+    --text-color: #777777;
+    --gradient-color: linear-gradient(rgba(115,31,125,0.8)1%,rgba(0,0,0,0));
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.305);
+}
+
+
+/*Global classes*/
+
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/*Buttons*/
+.button{
+    padding: 0.6rem 2rem;
+    font: normal 500 16px/20px var(--font-roboto);
+    position:relative;
+    border: 2px solid transparent;
+    border-radius:7px;
+}
+
+.button.primary-button{
+    background:linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: border .8s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    transition: border .8s ease;
+    border: 2px solid var(--primary-color);
+    border-radius:7px;
+}
+.button.secondary-button{
+    background:white;
+    background-clip: padding-box;
+    color: black;
+    transition: border .8s ease;
+    border: 2px solid  var(--primary-color);
+}
+.button.secondary-button:hover{
+    background: linear-gradient(rgba(115,31,125,1)60%,rgba(0,0,0,0));
+    color:whitesmoke;
+    box-shadow: var(--box-shadow);
+    transition: border .8s ease;
+    border: 2px solid white;
+    border-radius:7px;
+}
 
 #home{
-    /* background-image:var(--gradient-color), url(../images/home.png); */
+    background-image:var(--gradient-color), url(../images/home.png);
     /* background: var(--gradient-color),url(../images/home.png); */
-    background: var(--gradient-color);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:100% 100%, center;
@@ -394,6 +457,75 @@
     transform:scale(1.1);
 }
 
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    #home .navbar{
+        background: linear-gradient(rgba(115,31,125,1)100%,rgba(0,0,0,0));
+    }
+    #home .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #home .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #about .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #about .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #about .about-title{
+        margin-top:10%;
+    }
+    #education .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #education .navbar .navbar-brand >img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #skills .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #skills .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #contact .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #contact .navbar .navbar-brand > img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #projects .navbar .navbar-nav{
+        padding-right:0;
+        padding-top:0rem;
+    }
+    #projects .navbar .navbar-brand >img{
+        padding-left: 0;
+        height: 40px;
+        width: 130px;
+    }
+    #about .about-title{
+        margin-left:15%;
+
+    }
+}
 
 
 
